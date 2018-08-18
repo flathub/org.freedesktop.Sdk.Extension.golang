@@ -8,6 +8,11 @@
   "sdk-extensions": [],
   "separate-locales": false,
   "appstream-compose": false,
+  "build-options": {
+      "build-args": [
+          "--share=network"
+      ]
+  },
   "modules": [
     {
       "name": "golang",
@@ -66,6 +71,28 @@
       "buildsystem": "simple",
       "build-commands": [
         "cp enable.sh /usr/lib/sdk/golang/"
+      ]
+    },
+    {
+      "name": "tools",
+      "sources": [
+        {
+          "type": "script",
+          "commands": [
+            "export GOPATH=/usr/lib/sdk/golang/tools; export PATH=$PATH:$GOPATH/bin; . /usr/lib/sdk/golang/enable.sh;"
+          ],
+          "dest-filename": "tools-enable.sh"
+        }
+      ],
+      "buildsystem": "simple",
+      "build-commands": [
+        ". ./tools-enable.sh; go get -u github.com/nsf/gocode",
+        ". ./tools-enable.sh; go get -u github.com/jstemmer/gotags",
+        ". ./tools-enable.sh; go get -u golang.org/x/tools/cmd/goimports",
+        ". ./tools-enable.sh; go get -u golang.org/x/tools/cmd/guru",
+        ". ./tools-enable.sh; go get -u github.com/rogpeppe/godef",
+        ". ./tools-enable.sh; go get -u gopkg.in/alecthomas/gometalinter.v2",
+        ". ./tools-enable.sh; gometalinter.v2 --install"
       ]
     },
     {
