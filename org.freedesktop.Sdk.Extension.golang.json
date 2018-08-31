@@ -8,11 +8,6 @@
   "sdk-extensions": [],
   "separate-locales": false,
   "appstream-compose": false,
-  "build-options": {
-      "build-args": [
-          "--share=network"
-      ]
-  },
   "modules": [
     {
       "name": "golang",
@@ -94,17 +89,208 @@
           "url": "https://github.com/nsf/gocode.git",
           "commit" : "9d1e0378d35b0527c9aef0d17c0913fc38d88b81",
           "dest": "go/src/github.com/nsf/gocode"
-        }
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/alecthomas/gometalinter",
+          "commit" : "1bf6c96cb1749a6e605a2869f9a0825945ae50f5",
+          "dest": "go/src/github.com/alecthomas/gometalinter"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/opennota/check",
+          "commit" : "d4582481d7dc21600a5a654a46e704387a176e13",
+          "dest": "go/src/github.com/opennota/check"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/golang/lint",
+          "commit" : "06c8688daad7faa9da5a0c2f163a3d14aac986ca",
+          "dest": "go/src/github.com/golang/lint"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/mdempsky/maligned",
+          "commit" : "6e39bd26a8c8b58c5a22129593044655a9e25959",
+          "dest": "go/src/github.com/mdempsky/maligned"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/alexkohler/nakedret",
+          "commit" : "c0e305a4f690fed163d47628bcc06a6d5655bf92",
+          "dest": "go/src/github.com/alexkohler/nakedret"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/tsenart/deadcode",
+          "commit" : "210d2dc333e90c7e3eedf4f2242507a8e83ed4ab",
+          "dest": "go/src/github.com/tsenart/deadcode"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/alecthomas/gocyclo",
+          "commit" : "aa8f8b160214d8dfccfe3e17e578dd0fcc6fede7",
+          "dest": "go/src/github.com/alecthomas/gocyclo"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/gordonklaus/ineffassign",
+          "commit" : "3fd9b69f2fb179405773f03d33c68a00f3a1ca4a",
+          "dest": "go/src/github.com/gordonklaus/ineffassign"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/mibk/dupl",
+          "commit" : "72dc2d83bec70e053e9294378aacb1a032f51a31",
+          "dest": "go/src/github.com/mibk/dupl"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/google/shlex",
+          "commit": "6f45313302b9c56850fc17f99e40caebce98c716",
+          "dest": "go/src/github.com/google/shlex"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/golang/tools",
+          "commit": "6cd1fcedba52a3e8045a1c96970cec308e4a632c",
+          "dest": "go/src/golang.org/x/tools"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/kisielk/gotool",
+          "commit": "80517062f582ea3340cd4baf70e86d539ae7d84d",
+          "dest": "go/src/github.com/kisielk/gotool"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/kisielk/errcheck",
+          "commit": "1787c4bee836470bf45018cfbc783650db3c6501",
+          "dest": "go/src/github.com/kisielk/errcheck"
+        },
+	{
+	  "type": "git",
+	  "url": "https://github.com/mvdan/lint",
+	  "commit": "adc824a0674b99099789b6188a058d485eaf61c0",
+	  "dest": "go/src/mvdan.cc/lint"
+	},
+	{
+	  "type": "git",
+	  "url": "https://github.com/mvdan/lint",
+	  "commit": "adc824a0674b99099789b6188a058d485eaf61c0",
+	  "dest": "go/src/github.com/mvdan/lint"
+	},
+	{
+	  "type": "git",
+	  "url": "https://github.com/mvdan/unparam",
+	  "commit": "8eb9bf77f9de686d45b54a5872aca05e57d36560",
+	  "dest": "go/src/mvdan.cc/unparam"
+	},
+	{
+	  "type": "git",
+	  "url": "https://github.com/mvdan/unparam",
+	  "commit": "8eb9bf77f9de686d45b54a5872aca05e57d36560",
+	  "dest": "go/src/github.com/mvdan/unparam"
+	},
+	{
+	  "type": "git",
+	  "url": "https://github.com/mvdan/interfacer",
+	  "commit": "822e100dd73a2677e406ccc437efdb4a82e67033",
+	  "dest": "go/src/mvdan.cc/interfacer"
+	},
+	{
+	  "type": "git",
+	  "url": "https://github.com/mvdan/interfacer",
+	  "commit": "822e100dd73a2677e406ccc437efdb4a82e67033",
+	  "dest": "go/src/github.com/mvdan/interfacer"
+	},
+	{
+	  "type": "git",
+	  "url": "https://github.com/jgautheron/goconst",
+	  "commit": "9740945f5dcb78c2faa8eedcce78c2a04aa6e1e9",
+	  "dest": "go/src/github.com/jgautheron/goconst"
+	},
+	{
+	  "type": "git",
+	  "url": "https://github.com/dominikh/go-tools",
+	  "commit": "88497007e8588ea5b6baee991f74a1607e809487",
+	  "dest": "go/src/honnef.co/go/tools"
+	},
+	{
+	  "type": "git",
+	  "url": "https://github.com/client9/misspell",
+	  "commit": "c0b55c8239520f6b5aa15a0207ca8b28027ba49e",
+	  "dest": "go/src/github.com/client9/misspell"
+	},
+	{
+	  "type": "git",
+	  "url": "https://github.com/client9/misspell",
+	  "commit": "c0b55c8239520f6b5aa15a0207ca8b28027ba49e",
+	  "dest": "go/src/github.com/client9/misspell"
+	},
+	{
+	  "type": "git",
+	  "url": "https://github.com/walle/lll",
+	  "commit": "8b13b3fbf7312913fcfdbfa78997b9bd1dbb11af",
+	  "dest": "go/src/github.com/walle/lll"
+	},
+        {
+	  "type": "git",
+	  "url": "https://github.com/securego/gosec",
+	  "commit": "7fd94463edcbf12df2b5579682c003c3bffd6749",
+	  "dest": "go/src/github.com/securego/gosec"
+	},
+        {
+	  "type": "git",
+	  "url": "https://github.com/nbutton23/zxcvbn-go",
+	  "commit": "be3c235ccdcd19f7411819a5bc12bd647ff7e50d",
+	  "dest": "go/src/github.com/nbutton23/zxcvbn-go"
+	},
+        {
+	  "type": "git",
+	  "url": "https://github.com/ryanuber/go-glob",
+	  "commit": "256dc444b735e061061cf46c809487313d5b0065",
+	  "dest": "go/src/github.com/ryanuber/go-glob"
+	},
+        {
+	  "type": "git",
+	  "url": "https://gopkg.in/yaml.v2",
+	  "commit": "5420a8b6744d3b0345ab293f6fcba19c978f1183",
+	  "dest": "go/src/gopkg.in/yaml.v2"
+	},
+	{
+	  "type": "git",
+	  "url": "https://github.com/stripe/safesql",
+	  "commit": "cddf355596fe2dbae05b4b5f845b4a6e2fb4e818",
+	  "dest": "go/src/github.com/stripe/safesql"
+	}
       ],
       "buildsystem": "simple",
       "build-commands": [
-        "GOPATH=$(pwd)/go; cd go/src/github.com/nsf/gocode; /usr/lib/sdk/golang/bin/go build; cp gocode /usr/lib/sdk/golang/bin/gocode",
-        "GOPATH=$(pwd)/go; cd go/src/github.com/jstemmer/gotags; /usr/lib/sdk/golang/bin/go build; cp gotags /usr/lib/sdk/golang/bin/gotags",
-        ". ./tools-enable.sh; go get -u golang.org/x/tools/cmd/goimports",
-        ". ./tools-enable.sh; go get -u golang.org/x/tools/cmd/guru",
-        ". ./tools-enable.sh; go get -u github.com/rogpeppe/godef",
-        ". ./tools-enable.sh; go get -u gopkg.in/alecthomas/gometalinter.v2",
-        ". ./tools-enable.sh; gometalinter.v2 --install"
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/nsf/gocode; /usr/lib/sdk/golang/bin/go build; cp gocode /usr/lib/sdk/golang/bin/gocode",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/jstemmer/gotags; /usr/lib/sdk/golang/bin/go build; cp gotags /usr/lib/sdk/golang/bin/gotags",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/alecthomas/gometalinter; /usr/lib/sdk/golang/bin/go build; cp gometalinter /usr/lib/sdk/golang/bin/gometalinter",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/opennota/check/cmd/structcheck; /usr/lib/sdk/golang/bin/go build; cp structcheck /usr/lib/sdk/golang/bin/structcheck",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/opennota/check/cmd/varcheck; /usr/lib/sdk/golang/bin/go build; cp varcheck /usr/lib/sdk/golang/bin/varcheck",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/mdempsky/maligned; /usr/lib/sdk/golang/bin/go build; cp maligned /usr/lib/sdk/golang/bin/maligned",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/alexkohler/nakedret; /usr/lib/sdk/golang/bin/go build; cp nakedret /usr/lib/sdk/golang/bin/nakedret",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/tsenart/deadcode; /usr/lib/sdk/golang/bin/go build; cp deadcode /usr/lib/sdk/golang/bin/deadcode",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/alecthomas/gocyclo; /usr/lib/sdk/golang/bin/go build; cp gocyclo /usr/lib/sdk/golang/bin/gocyclo",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/gordonklaus/ineffassign; /usr/lib/sdk/golang/bin/go build; cp ineffassign /usr/lib/sdk/golang/bin/ineffassign",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/mibk/dupl; /usr/lib/sdk/golang/bin/go build; cp dupl /usr/lib/sdk/golang/bin/dupl",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/stripe/safesql; /usr/lib/sdk/golang/bin/go build; cp safesql /usr/lib/sdk/golang/bin/safesql",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/kisielk/errcheck; /usr/lib/sdk/golang/bin/go build; cp errcheck /usr/lib/sdk/golang/bin/errcheck",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/jgautheron/goconst/cmd/goconst; /usr/lib/sdk/golang/bin/go build; cp goconst /usr/lib/sdk/golang/bin/goconst",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/client9/misspell/cmd/misspell; /usr/lib/sdk/golang/bin/go build; cp misspell /usr/lib/sdk/golang/bin/misspell",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/walle/lll/cmd/lll; /usr/lib/sdk/golang/bin/go build; cp lll /usr/lib/sdk/golang/bin/lll",
+        "export GOPATH=$(pwd)/go; cd go/src/github.com/securego/gosec/cmd/gosec; /usr/lib/sdk/golang/bin/go build; cp gosec /usr/lib/sdk/golang/bin/gosec",
+        "export GOPATH=$(pwd)/go; cd go/src/golang.org/x/tools/cmd/gotype; /usr/lib/sdk/golang/bin/go build; cp gotype /usr/lib/sdk/golang/bin/gotype",
+        "export GOPATH=$(pwd)/go; cd go/src/golang.org/x/tools/cmd/goimports; /usr/lib/sdk/golang/bin/go build; cp goimports /usr/lib/sdk/golang/bin/goimports",
+        "export GOPATH=$(pwd)/go; cd go/src/mvdan.cc/interfacer; /usr/lib/sdk/golang/bin/go build; cp interfacer /usr/lib/sdk/golang/bin/interfacer",
+        "export GOPATH=$(pwd)/go; cd go/src/mvdan.cc/unparam; /usr/lib/sdk/golang/bin/go build; cp unparam /usr/lib/sdk/golang/bin/unparam",
+        "export GOPATH=$(pwd)/go; cd go/src/honnef.co/go/tools/cmd/gosimple; /usr/lib/sdk/golang/bin/go build; cp gosimple /usr/lib/sdk/golang/bin/gosimple",
+        "export GOPATH=$(pwd)/go; cd go/src/honnef.co/go/tools/cmd/staticcheck; /usr/lib/sdk/golang/bin/go build; cp staticcheck /usr/lib/sdk/golang/bin/staticcheck",
+        "export GOPATH=$(pwd)/go; cd go/src/honnef.co/go/tools/cmd/unused; /usr/lib/sdk/golang/bin/go build; cp unused /usr/lib/sdk/golang/bin/unused"
       ]
     },
     {
