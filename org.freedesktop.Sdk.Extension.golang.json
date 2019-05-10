@@ -42,7 +42,7 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://dl.google.com/go/go1.12.5.windows-amd64.zip",
+          "url": "https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz",
           "sha256": "aea86e3c73495f205929cfebba0d63f1382c8ac59be081b6351681415f4063cf"
         }
       ],
