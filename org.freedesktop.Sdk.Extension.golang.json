@@ -18,32 +18,32 @@
           "only-arches": [
             "i386"
           ],
-          "url": "https://dl.google.com/go/go1.12.5.linux-386.tar.gz",
-          "sha256": "146605e13bf337ff3aacd941a816c5d97a8fef8b5817e07fcec4540632085980"
+          "url": "https://dl.google.com/go/go1.12.6.linux-386.tar.gz",
+          "sha256": "7aaf25164a9ab5e1005c15535ed16ee122df50ac192c2d79b7940315c2b74f2c"
         },
         {
           "type": "archive",
           "only-arches": [
             "arm"
           ],
-          "url": "https://dl.google.com/go/go1.12.5.linux-armv6l.tar.gz",
-          "sha256": "311f5e76c7cec1ec752474a61d837e474b8e750b8e3eed267911ab57c0e5da9a"
+          "url": "https://dl.google.com/go/go1.12.6.linux-armv6l.tar.gz",
+          "sha256": "0708fbc125e7b782b44d450f3a3864859419b3691121ad401f1b9f00e488bddb"
         },
         {
           "type": "archive",
           "only-arches": [
             "aarch64"
           ],
-          "url": "https://dl.google.com/go/go1.12.5.linux-arm64.tar.gz",
-          "sha256": "ff09f34935cd189a4912f3f308ec83e4683c309304144eae9cf60ebc552e7cd8"
+          "url": "https://dl.google.com/go/go1.12.6.linux-arm64.tar.gz",
+          "sha256": "0708fbc125e7b782b44d450f3a3864859419b3691121ad401f1b9f00e488bddb"
         },
         {
           "type": "archive",
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz",
-          "sha256": "aea86e3c73495f205929cfebba0d63f1382c8ac59be081b6351681415f4063cf"
+          "url": "https://dl.google.com/go/go1.12.6.linux-amd64.tar.gz",
+          "sha256": "dbcf71a3c1ea53b8d54ef1b48c85a39a6c9a935d01fc8291ff2b92028e59913c"
         }
       ],
       "build-commands": [
