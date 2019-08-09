@@ -79,7 +79,7 @@
       "sources": [
         {
           "type": "file",
-          "path": "org.freedesktop.Sdk.Extension.golang.appdata.xml"
+          "path": "org.freedesktop.Sdk.Extension.golang.appdata.yaml"
         }
       ]
     }
