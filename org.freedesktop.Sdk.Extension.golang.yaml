@@ -49,8 +49,7 @@ modules:
   build-commands:
   - mkdir -p ${FLATPAK_DEST}/share/appdata
   - cp org.freedesktop.Sdk.Extension.golang.appdata.yaml ${FLATPAK_DEST}/share/appdata
-  - appstream-compose  --basename=org.freedesktop.Sdk.Extension.golang --prefix=${FLATPAK_DEST}
-    --origin=flatpak org.freedesktop.Sdk.Extension.golang
+  - appstream-compose  --basename=org.freedesktop.Sdk.Extension.golang --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.Sdk.Extension.golang
   sources:
   - type: file
     path: org.freedesktop.Sdk.Extension.golang.appdata.yaml
