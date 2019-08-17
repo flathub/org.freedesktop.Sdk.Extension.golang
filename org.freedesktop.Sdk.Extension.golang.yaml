@@ -1,4 +1,3 @@
----
 id: org.freedesktop.Sdk.Extension.golang
 branch: '18.08'
 runtime: org.freedesktop.Sdk
