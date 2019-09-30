@@ -1,5 +1,5 @@
 id: org.freedesktop.Sdk.Extension.golang
-branch: '18.08'
+branch: '19.08'
 runtime: org.freedesktop.Sdk
 build-extension: true
 sdk: org.freedesktop.Sdk
@@ -10,11 +10,6 @@ modules:
 - name: golang
   buildsystem: simple
   sources:
-  - type: archive
-    only-arches:
-    - i386
-    url: https://dl.google.com/go/go1.13.1.linux-386.tar.gz
-    sha256: 4bf7a961fda7ad892b8824002036de8c0f290df05df2e8f11252d1f8c77dcd8f
   - type: archive
     only-arches:
     - arm

@@ -3,6 +3,6 @@
   <id>org.freedesktop.Sdk.Extension.golang</id>
   <metadata_license>CC0-1.0</metadata_license>
   <name>Go programming language Sdk extension</name>
-  <summary>Go compiler and tools</summary>​
+  <summary>Go compiler and tools</summary>
   <url type="homepage">https://golang.org/</url>
 </component>
