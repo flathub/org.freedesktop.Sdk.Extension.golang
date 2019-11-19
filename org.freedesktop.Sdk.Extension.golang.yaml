@@ -27,7 +27,7 @@ modules:
     x-checker-data:
       type: rotating-url
       url: https://dl.google.com/go/go1.13.1.linux-armv6l.tar.gz
-      pattern: url: https://dl.google.com/go/go(\d+.\d+[.\d+]+).linux-armv6l.tar.gz
+      pattern: https://dl.google.com/go/go(\d+.\d+[.\d+]+).linux-armv6l.tar.gz
   - type: archive
     only-arches:
     - aarch64
