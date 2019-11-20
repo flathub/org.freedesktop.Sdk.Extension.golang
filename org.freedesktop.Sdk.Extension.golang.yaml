@@ -17,7 +17,7 @@ modules:
     sha256: 4bf7a961fda7ad892b8824002036de8c0f290df05df2e8f11252d1f8c77dcd8f
     x-checker-data:
       type: rotating-url
-      url: https://dl.google.com/go/go1.13.1.linux-386.tar.gz
+      url: https://dl.google.com/go
       pattern: https://dl.google.com/go/go(\d+.\d+[.\d+]+).linux-386.tar.gz
   - type: archive
     only-arches:
@@ -26,7 +26,7 @@ modules:
     sha256: 7c75d4002321ea4a066dfe13f6dd5168076e9a231317c5afd55e78b86f478e37
     x-checker-data:
       type: rotating-url
-      url: https://dl.google.com/go/go1.13.1.linux-armv6l.tar.gz
+      url: https://dl.google.com/go
       pattern: https://dl.google.com/go/go(\d+.\d+[.\d+]+).linux-armv6l.tar.gz
   - type: archive
     only-arches:
@@ -35,7 +35,7 @@ modules:
     sha256: 8af8787b7c2a3c0eb3f20f872577fcb6c36098bf725c59c4923921443084c807
     x-checker-data:
       type: rotating-url    
-      url: https://dl.google.com/go/go1.13.1.linux-arm64.tar.gz    
+      url: https://dl.google.com/go
       pattern: https://dl.google.com/go/go(\d+.\d+[.\d+]+).linux-arm64.tar.gz    
   - type: archive
     only-arches:
@@ -44,7 +44,7 @@ modules:
     sha256: 94f874037b82ea5353f4061e543681a0e79657f787437974214629af8407d124
     x-checker-data:
       type: rotating-url    
-      url: https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz
+      url: https://dl.google.com/go
       pattern: https://dl.google.com/go/go(\d+.\d+[.\d+]+).linux-amd64.tar.gz 
   build-commands:
   - install -d /usr/lib/sdk/golang
