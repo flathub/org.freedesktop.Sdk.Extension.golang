@@ -12,6 +12,11 @@ modules:
   sources:
   - type: archive
     only-arches:
+    - i386
+    url: https://dl.google.com/go/go1.13.4.linux-386.tar.gz
+    sha256: 497934398ca57c7c207ce3388f099823923b4c7b74394d6ed64cd2d3751aecb8
+  - type: archive
+    only-arches:
     - arm
     url: https://dl.google.com/go/go1.13.4.linux-armv6l.tar.gz
     sha256: 9f76e6353c9ae2dcad1731b7239531eb8be2fe171f29f2a9c5040945a930fd41
