@@ -13,23 +13,23 @@ modules:
   - type: archive
     only-arches:
     - i386
-    url: https://dl.google.com/go/go1.13.4.linux-386.tar.gz
-    sha256: 497934398ca57c7c207ce3388f099823923b4c7b74394d6ed64cd2d3751aecb8
+    url: https://dl.google.com/go/go1.14.1.linux-386.tar.gz
+    sha256: 92d465accdebbe2d0749b2f90c22ecb1fd2492435144923f88ce410cd56b6546
   - type: archive
     only-arches:
     - arm
-    url: https://dl.google.com/go/go1.13.4.linux-armv6l.tar.gz
-    sha256: 9f76e6353c9ae2dcad1731b7239531eb8be2fe171f29f2a9c5040945a930fd41
+    url: https://dl.google.com/go/go1.14.1.linux-armv6l.tar.gz
+    sha256: 04f10e345dae0d7c6c32ffd6356b47f2d4d0e8a0cb757f4ef48ead6c5bef206f
   - type: archive
     only-arches:
     - aarch64
-    url: https://dl.google.com/go/go1.13.4.linux-arm64.tar.gz
-    sha256: 8b8d99eb07206f082468fb4d0ec962a819ae45d54065fc1ed6e2c502e774aaf0
+    url: https://dl.google.com/go/go1.14.1.linux-arm64.tar.gz
+    sha256: 5d8f2c202f35481617e24e63cca30c6afb1ec2585006c4a6ecf16c5f4928ab3c
   - type: archive
     only-arches:
     - x86_64
-    url: https://dl.google.com/go/go1.13.4.linux-amd64.tar.gz
-    sha256: 692d17071736f74be04a72a06dab9cac1cd759377bd85316e52b2227604c004c
+    url: https://dl.google.com/go/go1.14.1.linux-amd64.tar.gz
+    sha256: 2f49eb17ce8b48c680cdb166ffd7389702c0dec6effa090c324804a5cac8a7f8
   build-commands:
   - install -d /usr/lib/sdk/golang
   - cp -rpv * /usr/lib/sdk/golang/
