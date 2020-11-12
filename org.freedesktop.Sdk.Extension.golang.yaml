@@ -13,36 +13,36 @@ modules:
       - type: archive
         only-arches:
           - arm
-        url: https://dl.google.com/go/go1.15.4.linux-armv6l.tar.gz
-        sha256: fe449ad3e121472e5db2f70becc0fef9d1a7188616c0605ada63f1e3bbad280e
+        url: https://dl.google.com/go/go1.15.5.linux-armv6l.tar.gz
+        sha256: 5ea6456620d3efed5dda99238c7f23866eafdd915e5348736e631bc283c0238a
         x-checker-data:
           type: html
           url: https://golang.org/dl/
           version-pattern: (go\d.\d+\.*\d*)
           url-template: https://golang.org/dl/$version.linux-armv6l.tar.gz
-        size: 97805571
+        size: 97814420
       - type: archive
         only-arches:
           - aarch64
-        url: https://dl.google.com/go/go1.15.4.linux-arm64.tar.gz
-        sha256: 6f083b453484fc5f95afb345547a58ccc957cde91348b7a7c68f5b060e488c85
+        url: https://dl.google.com/go/go1.15.5.linux-arm64.tar.gz
+        sha256: a72a0b036beb4193a0214bca3fca4c5d68a38a4ccf098c909f7ce8bf08567c48
         x-checker-data:
           type: html
           url: https://golang.org/dl/
           version-pattern: (go\d.\d+\.*\d*)
           url-template: https://golang.org/dl/$version.linux-arm64.tar.gz
-        size: 97521552
+        size: 97548129
       - type: archive
         only-arches:
           - x86_64
-        url: https://dl.google.com/go/go1.15.4.linux-amd64.tar.gz
-        sha256: eb61005f0b932c93b424a3a4eaa67d72196c79129d9a3ea8578047683e2c80d5
+        url: https://dl.google.com/go/go1.15.5.linux-amd64.tar.gz
+        sha256: 9a58494e8da722c3aef248c9227b0e9c528c7318309827780f16220998180a0d
         x-checker-data:
           type: html
           url: https://golang.org/dl/
           version-pattern: (go\d.\d+\.*\d*)
           url-template: https://golang.org/dl/$version.linux-amd64.tar.gz
-        size: 120906247
+        size: 120900442
     build-commands:
       - install -d /usr/lib/sdk/golang
       - cp -rpv * /usr/lib/sdk/golang/
