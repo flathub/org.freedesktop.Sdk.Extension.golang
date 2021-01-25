@@ -7,48 +7,49 @@ runtime-version: '20.08'
 separate-locales: false
 appstream-compose: false
 modules:
-- name: golang
-  buildsystem: simple
-  sources:
-  - type: archive
-    only-arches:
-    - aarch64
-    url: https://dl.google.com/go/go1.14.5.linux-arm64.tar.gz
-    sha256: 27a3b3ca4fd60c8680cd2235d5ca38cad41ee8c41bd61891d39a8501ada5f677
-    x-checker-data:
-      type: anitya
-      project-id: 1227
-      url-template: https://golang.org/dl/go$version.linux-arm64.tar.gz
-  - type: archive
-    only-arches:
-    - x86_64
-    url: https://dl.google.com/go/go1.14.5.linux-amd64.tar.gz
-    sha256: 82a1b84f16858db03231eb201f90cce2a991078dda543879b87e738e2586854b
-    x-checker-data:
-      type: anitya
-      project-id: 1227
-      url-template: https://golang.org/dl/go$version.linux-amd64.tar.gz
-  build-commands:
-  - install -d /usr/lib/sdk/golang
-  - cp -rpv * /usr/lib/sdk/golang/
+  - name: golang
+    buildsystem: simple
+    sources:
+      - type: archive
+        only-arches:
+          - aarch64
+        url: https://golang.org/dl/go1.15.7.linux-arm64.tar.gz
+        sha256: bca4af0c20f86521dfabf3b39fa2f1ceeeb11cebf7e90bdf1de2618c40628539
+        x-checker-data:
+          type: anitya
+          project-id: 1227
+          url-template: https://golang.org/dl/go$version.linux-arm64.tar.gz
+      - type: archive
+        only-arches:
+          - x86_64
+        url: https://golang.org/dl/go1.15.7.linux-amd64.tar.gz
+        sha256: 0d142143794721bb63ce6c8a6180c4062bcf8ef4715e7d6d6609f3a8282629b3
+        x-checker-data:
+          type: anitya
+          project-id: 1227
+          url-template: https://golang.org/dl/go$version.linux-amd64.tar.gz
+    build-commands:
+      - install -d /usr/lib/sdk/golang
+      - cp -rpv * /usr/lib/sdk/golang/
 
-- name: scripts
-  sources:
-  - type: script
-    commands:
-    - export GOROOT=/usr/lib/sdk/golang
-    - export PATH=$PATH:$GOROOT/bin
-    dest-filename: enable.sh
-  buildsystem: simple
-  build-commands:
-  - cp enable.sh /usr/lib/sdk/golang/
+  - name: scripts
+    sources:
+      - type: script
+        commands:
+          - export GOROOT=/usr/lib/sdk/golang
+          - export PATH=$PATH:$GOROOT/bin
+        dest-filename: enable.sh
+    buildsystem: simple
+    build-commands:
+      - cp enable.sh /usr/lib/sdk/golang/
 
-- name: appdata
-  buildsystem: simple
-  build-commands:
-  - mkdir -p ${FLATPAK_DEST}/share/appdata
-  - cp org.freedesktop.Sdk.Extension.golang.appdata.xml ${FLATPAK_DEST}/share/appdata
-  - appstream-compose  --basename=org.freedesktop.Sdk.Extension.golang --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.Sdk.Extension.golang
-  sources:
-  - type: file
-    path: org.freedesktop.Sdk.Extension.golang.appdata.xml
+  - name: appdata
+    buildsystem: simple
+    build-commands:
+      - mkdir -p ${FLATPAK_DEST}/share/appdata
+      - cp org.freedesktop.Sdk.Extension.golang.appdata.xml ${FLATPAK_DEST}/share/appdata
+      - appstream-compose  --basename=org.freedesktop.Sdk.Extension.golang --prefix=${FLATPAK_DEST}
+        --origin=flatpak org.freedesktop.Sdk.Extension.golang
+    sources:
+      - type: file
+        path: org.freedesktop.Sdk.Extension.golang.appdata.xml
