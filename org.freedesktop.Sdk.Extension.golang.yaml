@@ -3,7 +3,7 @@ branch: '21.08'
 runtime: org.freedesktop.Sdk
 build-extension: true
 sdk: org.freedesktop.Sdk
-runtime-version: '20.08'
+runtime-version: '21.08'
 separate-locales: false
 appstream-compose: false
 modules:
