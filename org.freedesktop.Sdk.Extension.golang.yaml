@@ -13,23 +13,23 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        url: https://golang.org/dl/go1.17.2.linux-arm64.tar.gz
-        sha256: a5a43c9cdabdb9f371d56951b14290eba8ce2f9b0db48fb5fc657943984fd4fc
+        url: https://go.dev/dl/go1.17.4.linux-arm64.tar.gz
+        sha256: 617a46bd083e59877bb5680998571b3ddd4f6dcdaf9f8bf65ad4edc8f3eafb13
         x-checker-data:
           type: anitya
           project-id: 1227
           stable-only: true
-          url-template: https://golang.org/dl/go$version.linux-arm64.tar.gz
+          url-template: https://go.dev/dl/go$version.linux-arm64.tar.gz
       - type: archive
         only-arches:
           - x86_64
-        url: https://golang.org/dl/go1.17.2.linux-amd64.tar.gz
-        sha256: f242a9db6a0ad1846de7b6d94d507915d14062660616a61ef7c808a76e4f1676
+        url: https://go.dev/dl/go1.17.4.linux-amd64.tar.gz
+        sha256: adab2483f644e2f8a10ae93122f0018cef525ca48d0b8764dae87cb5f4fd4206
         x-checker-data:
           type: anitya
           project-id: 1227
           stable-only: true
-          url-template: https://golang.org/dl/go$version.linux-amd64.tar.gz
+          url-template: https://go.dev/dl/go$version.linux-amd64.tar.gz
     build-commands:
       - install -d /usr/lib/sdk/golang
       - cp -rpv * /usr/lib/sdk/golang/
