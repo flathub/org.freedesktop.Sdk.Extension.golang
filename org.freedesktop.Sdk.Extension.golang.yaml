@@ -13,8 +13,8 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        url: https://go.dev/dl/go1.17.4.linux-arm64.tar.gz
-        sha256: 617a46bd083e59877bb5680998571b3ddd4f6dcdaf9f8bf65ad4edc8f3eafb13
+        url: https://go.dev/dl/go1.17.6.linux-arm64.tar.gz
+        sha256: 82c1a033cce9bc1b47073fd6285233133040f0378439f3c4659fe77cc534622a
         x-checker-data:
           type: anitya
           project-id: 1227
@@ -23,8 +23,8 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://go.dev/dl/go1.17.4.linux-amd64.tar.gz
-        sha256: adab2483f644e2f8a10ae93122f0018cef525ca48d0b8764dae87cb5f4fd4206
+        url: https://go.dev/dl/go1.17.6.linux-amd64.tar.gz
+        sha256: 231654bbf2dab3d86c1619ce799e77b03d96f9b50770297c8f4dff8836fc8ca2
         x-checker-data:
           type: anitya
           project-id: 1227
