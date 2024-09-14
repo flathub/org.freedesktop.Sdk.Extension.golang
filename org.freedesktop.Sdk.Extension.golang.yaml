@@ -48,8 +48,7 @@ modules:
   - name: appdata
     buildsystem: simple
     build-commands:
-      - mkdir -p ${FLATPAK_DEST}/share/metainfo
-      - cp org.freedesktop.Sdk.Extension.golang.appdata.xml ${FLATPAK_DEST}/share/metainfo
+      - install -Dm0644 org.freedesktop.Sdk.Extension.golang.appdata.xml -t ${FLATPAK_DEST}/share/metainfo
       - appstreamcli compose --components=${FLATPAK_ID} --prefix=/ --origin=${FLATPAK_ID} --result-root=${FLATPAK_DEST} --data-dir=${FLATPAK_DEST}/share/app-info/xmls ${FLATPAK_DEST}
     sources:
       - type: file
