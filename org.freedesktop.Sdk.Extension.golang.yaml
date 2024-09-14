@@ -5,7 +5,6 @@ build-extension: true
 sdk: org.freedesktop.Sdk
 runtime-version: '24.08'
 separate-locales: false
-appstream-compose: false
 modules:
   - name: golang
     buildsystem: simple
@@ -50,8 +49,6 @@ modules:
     build-commands:
       - mkdir -p ${FLATPAK_DEST}/share/appdata
       - cp org.freedesktop.Sdk.Extension.golang.appdata.xml ${FLATPAK_DEST}/share/appdata
-      - appstream-compose  --basename=org.freedesktop.Sdk.Extension.golang --prefix=${FLATPAK_DEST}
-        --origin=flatpak org.freedesktop.Sdk.Extension.golang
     sources:
       - type: file
         path: org.freedesktop.Sdk.Extension.golang.appdata.xml
