@@ -6,58 +6,14 @@
   <summary>Go compiler and tools</summary>
   <url type="homepage">https://golang.org/</url>
   <releases>
+    <release version="1.24.1" date="2025-03-04">
+      <description></description>
+    </release>
     <release version="1.23.1" date="2024-09-05">
       <description></description>
     </release>
     <release version="1.23.0" date="2024-08-13">
       <description/>
     </release>
-    <release version="1.22.6" date="2024-08-06">
-      <description/>
-    </release>
-    <release version="1.22.5" date="2024-07-02">
-      <description/>
-    </release>
-    <release version="1.22.4" date="2024-06-04">
-      <description/>
-    </release>
-    <release version="1.22.3" date="2024-05-07"/>
-    <release version="1.22.2" date="2024-04-03"/>
-    <release version="1.22.1" date="2024-03-05"/>
-    <release version="1.22.0" date="2024-02-06"/>
-    <release version="1.21.0" date="2023-08-08"/>
-    <release version="1.20.7" date="2023-08-01"/>
-    <release version="1.20.6" date="2023-07-11"/>
-    <release version="1.20.5" date="2023-06-06"/>
-    <release version="1.20.4" date="2023-05-02"/>
-    <release version="1.20.3" date="2023-04-04"/>
-    <release version="1.20.2" date="2023-03-07"/>
-    <release version="1.20.1" date="2023-02-14"/>
-    <release version="1.19.5" date="2023-01-10"/>
-    <release version="1.19.4" date="2022-12-06"/>
-    <release version="1.19.3" date="2022-11-01"/>
-    <release version="1.19.2" date="2022-10-04"/>
-    <release version="1.19.1" date="2022-09-06"/>
-    <release version="1.19" date="2022-08-02"/>
-    <release version="1.18.4" date="2022-07-12"/>
-    <release version="1.18.3" date="2022-06-01"/>
-    <release version="1.18.2" date="2022-05-10"/>
-    <release version="1.18.1" date="2022-04-13"/>
-    <release version="1.18" date="2022-03-15"/>
-    <release version="1.17.8" date="2022-03-03"/>
-    <release version="1.17.7" date="2022-02-10"/>
-    <release version="1.17.2" date="2021-10-07"/>
-    <release version="1.17.1" date="2021-09-09"/>
-    <release version="1.17" date="2021-08-16"/>
-    <release version="1.16.7" date="2021-08-05"/>
-    <release version="1.16.6" date="2021-07-12"/>
-    <release version="1.16.5" date="2021-06-03"/>
-    <release version="1.16.4" date="2021-05-06"/>
-    <release version="1.16.3" date="2021-04-01"/>
-    <release version="1.16.2" date="2021-03-11"/>
-    <release version="1.16.1" date="2021-03-10"/>
-    <release version="1.16" date="2021-02-16"/>
-    <release version="1.15.8" date="2021-02-04"/>
-    <release version="1.15.7" date="2021-01-19"/>
   </releases>
 </component>

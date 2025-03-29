@@ -5,7 +5,6 @@ build-extension: true
 sdk: org.freedesktop.Sdk
 runtime-version: '23.08'
 separate-locales: false
-appstream-compose: false
 modules:
   - name: golang
     buildsystem: simple
@@ -13,8 +12,8 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        url: https://go.dev/dl/go1.23.1.linux-arm64.tar.gz
-        sha256: faec7f7f8ae53fda0f3d408f52182d942cc89ef5b7d3d9f23ff117437d4b2d2f
+        url: https://go.dev/dl/go1.24.1.linux-arm64.tar.gz
+        sha256: 8df5750ffc0281017fb6070fba450f5d22b600a02081dceef47966ffaf36a3af
         x-checker-data:
           type: anitya
           project-id: 1227
@@ -23,8 +22,8 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://go.dev/dl/go1.23.1.linux-amd64.tar.gz
-        sha256: 49bbb517cfa9eee677e1e7897f7cf9cfdbcf49e05f61984a2789136de359f9bd
+        url: https://go.dev/dl/go1.24.1.linux-amd64.tar.gz
+        sha256: cb2396bae64183cdccf81a9a6df0aea3bce9511fc21469fb89a0c00470088073
         x-checker-data:
           type: anitya
           project-id: 1227
@@ -48,10 +47,7 @@ modules:
   - name: appdata
     buildsystem: simple
     build-commands:
-      - mkdir -p ${FLATPAK_DEST}/share/appdata
-      - cp org.freedesktop.Sdk.Extension.golang.appdata.xml ${FLATPAK_DEST}/share/appdata
-      - appstream-compose  --basename=org.freedesktop.Sdk.Extension.golang --prefix=${FLATPAK_DEST}
-        --origin=flatpak org.freedesktop.Sdk.Extension.golang
+      - install -Dm0644 org.freedesktop.Sdk.Extension.golang.appdata.xml -t ${FLATPAK_DEST}/share/metainfo
     sources:
       - type: file
         path: org.freedesktop.Sdk.Extension.golang.appdata.xml
