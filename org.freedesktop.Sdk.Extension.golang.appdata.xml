@@ -6,8 +6,11 @@
   <summary>Go compiler and tools</summary>
   <url type="homepage">https://golang.org/</url>
   <releases>
-    <release version="1.25.1" date="2025-09-03">
+    <release version="1.25.2" date="2025-10-07">
       <description></description>
+    </release>
+    <release version="1.25.1" date="2025-09-03">
+      <description/>
     </release>
     <release version="1.25.0" date="2025-08-12">
       <description/>
