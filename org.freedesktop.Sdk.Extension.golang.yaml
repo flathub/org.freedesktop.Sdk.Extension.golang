@@ -38,7 +38,7 @@ modules:
       - type: script
         commands:
           - export GOROOT=/usr/lib/sdk/golang
-          - export PATH=$PATH:$GOROOT/bin
+          - export PATH=$PATH:$GOROOT/bin:$HOME/go/bin
         dest-filename: enable.sh
     buildsystem: simple
     build-commands:
